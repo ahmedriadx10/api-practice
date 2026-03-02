@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes API Data</title>
+    <style>
+      .quote-card {
+        border: 1px solid rgba(206, 206, 206, 0.301);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ddd;
+      cursor: pointer;
+      transition: box-shadow 0.3s linear;
+      }
+
+      .quote-card:hover{
+        box-shadow: 0 0 10px rgb(95, 95, 243);
+        
+      }
+
+      .quote-card h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .quote-card p {
+        font-style: italic;
+        color: gray;
+        margin-top: 8px;
+      }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section
+      class="my-10  max-w-7xl mx-auto w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+      id="quotes-container"
+    ></section>
+
+    <script src="./scripts/quotes.js"></script>
+  </body>
+</html>
